@@ -1,0 +1,47 @@
+<div class="flex flex-col p-5">
+    <div class="flex items-center gap-2 mb-2 cursor-pointer p-3"
+    [ngClass]="{'bg-white rounded-lg shadow-soft-xl': navSelected==='a'}"
+     (click)="navSelected = 'a'">
+        <div class="inline-block text-slate-500 w-9 h-9 text-center rounded-lg bg-white shadow-soft-xl"
+        [ngClass]="{'text-white bg-gradient-to-tl from-purple-700 to-pink-500': navSelected === 'a'}">
+            <ng-icon class=" relative top-2" name="bootstrapBarChart"></ng-icon>
+        </div>
+        <p class="title text-slate-500 font-extralight text-xs">מצב כללי</p>
+    </div>
+    <div class="flex items-center gap-2 mb-2 cursor-pointer p-3"
+    [ngClass]="{'bg-white rounded-lg shadow-soft-xl': navSelected==='b'}"
+     (click)="navSelected = 'b'">
+        <div class="inline-block text-slate-500 w-9 h-9 text-center rounded-lg bg-white shadow-soft-xl"
+        [ngClass]="{'text-white bg-gradient-to-tl from-purple-700 to-pink-500': navSelected === 'b'}">
+            <ng-icon class=" relative top-2" name="heroUsers"></ng-icon>
+        </div>
+        <p class="title text-slate-500 font-extralight text-xs">תורמים</p>
+    </div>
+    <div class="flex items-center gap-2 mb-2 cursor-pointer p-3"
+    [ngClass]="{'bg-white rounded-lg shadow-soft-xl': navSelected==='c'}"
+     (click)="navSelected = 'c'">
+        <div class="inline-block text-slate-500 w-9 h-9 text-center rounded-lg bg-white shadow-soft-xl"
+        [ngClass]="{'text-white bg-gradient-to-tl from-purple-700 to-pink-500': navSelected === 'c'}">
+            <ng-icon class=" relative top-2" name="heroInboxStack"></ng-icon>
+        </div>
+        <p class="title text-slate-500 font-extralight text-xs">התחייבויות</p>
+    </div>
+    <div class="flex items-center gap-2 mb-2 cursor-pointer p-3"
+    [ngClass]="{'bg-white rounded-lg shadow-soft-xl': navSelected==='d'}"
+     (click)="navSelected = 'd'">
+        <div class="inline-block text-slate-500 w-9 h-9 text-center rounded-lg bg-white shadow-soft-xl"
+        [ngClass]="{'text-white bg-gradient-to-tl from-purple-700 to-pink-500': navSelected === 'd'}">
+            <ng-icon class=" relative top-2" name="heroPencilSquare"></ng-icon>
+        </div>
+        <p class="title text-slate-500 font-extralight text-xs">עדכון מידע</p>
+    </div>
+    <div class="flex items-center gap-2 mb-2 cursor-pointer p-3"
+    [ngClass]="{'bg-white rounded-lg shadow-soft-xl': navSelected==='e'}"
+     (click)="navSelected = 'e'">
+        <div class="inline-block text-slate-500 w-9 h-9 text-center rounded-lg bg-white shadow-soft-xl"
+        [ngClass]="{'text-white bg-gradient-to-tl from-purple-700 to-pink-500': navSelected === 'e'}">
+            <ng-icon class=" relative top-2" name="heroGift"></ng-icon>
+        </div>
+        <p class="title text-slate-500 font-extralight text-xs">עמלות</p>
+    </div>
+</div>
